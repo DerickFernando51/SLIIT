@@ -7,7 +7,9 @@ functions is amplification. Amplification is the process of magnifying a weak in
 larger level. In a BJT the waveform applied to the emitter terminal is amplified and produced at
 the collector terminal.
 
-The objective of this assignment is to design a DC biasing circuit. Initially, the values of
+The objective of this assignment is to design a DC biasing circuit. BC548 npn transistor will be used as the amplifier and a speaker of 8Ω will be used as the load. 
+
+Initially, the values of
 the required components will be obtained by analyzing the circuit. Then the accuracy of the
 circuit will be confirmed using simulation software. Finally, the circuit will be physically
 implemented and tested.
