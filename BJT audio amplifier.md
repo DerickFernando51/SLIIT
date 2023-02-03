@@ -7,7 +7,7 @@ functions is amplification. Amplification is the process of magnifying a weak in
 larger level. In a BJT the waveform applied to the emitter terminal is amplified and produced at
 the collector terminal.
 
-The objective of this assignment is to design a DC biasing circuit. BC548 npn transistor will be used as the amplifier and a speaker of 8Ω will be used as the load. 
+The objective of this project is to design a DC biasing circuit. BC548 npn transistor will be used as the amplifier and a speaker of 8Ω will be used as the load. 
 
 Initially, the values of
 the required components will be obtained by analyzing the circuit. Then the accuracy of the
@@ -119,7 +119,7 @@ Components used:
 • V<sub>P-P</sub> = 6.4 V
 
 # 6.0 Discussion
- In the first part of this lab the voltage divider bias circuit was analyzed to find the values
+ In the first part of this project the voltage divider bias circuit was analyzed to find the values
 of the required resistors and capacitors. Next, the simulations were performed in Multisim
 software using the values obtained. After confirming that the required output was obtained the
 PCB was designed. Then, the components were soldered to the PCB and the complete circuit
@@ -131,7 +131,7 @@ recorded.
  There is a slight variance between the practical and theoretical values. However, these
 values are acceptable and the circuit can be considered to be midpoint biased.
 
-This assignment provided a practical understanding of the amplification function of
+This project provided a practical understanding of the amplification function of
 bipolar junction transistors. I was able to clearly understand the concepts of BJT analysis,
 optimal PCB design and circuit construction.
 
