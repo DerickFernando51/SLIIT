@@ -47,9 +47,22 @@ implemented and tested.
 # 3.0 – Circuit simulation
 ## 3.1 Bias point accuracy
 <img width="869" alt="image" src="https://user-images.githubusercontent.com/124335793/216587367-15eaeb88-6a73-4c76-bfaf-916c2351d49a.png">
-• VCE = 6.712;  This value is approximately equal to Vcc / 2
+• V<sub>CE</sub> = 6.712;  This value is approximately equal to Vcc / 2
 
 • Therefore, the circuit is midpoint biased
+
+## Frequency response
+<img width="870" alt="image" src="https://user-images.githubusercontent.com/124335793/216590095-947ebfcf-d20a-4f00-acb4-23d1bce402fc.png">
+
+## Peak to peak output voltage with the load
+<img width="898" alt="image" src="https://user-images.githubusercontent.com/124335793/216590213-da08c2f0-00e7-44c4-a067-8c510bb4dc04.png">
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/124335793/216590479-7036ef21-e372-42e0-9cb5-1946a02f717d.png">
+• V<sub>P-P</sub> = 185 mV
+
+## Peak to peak output voltage when the load is removed
+<img width="911" alt="image" src="https://user-images.githubusercontent.com/124335793/216590933-26c5fe32-2ba5-4456-aaa5-2d0b7b468a46.png">
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216590991-0f7c7ea4-70ea-4dd8-a621-18a91bf0c0f4.png">
+• V<sub>P-P</sub> = 7.66 V
 
 
 
