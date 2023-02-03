@@ -844,7 +844,7 @@ GOTO MAIN
 # 7.0 Conclusion
 
 The task of this project was to display the EN number on a seven segment display. This was
-achieved by programming the PIC16F877A microcontroller using the mplab software. The
+achieved by programming the PIC16F877A microcontroller using the MPLAB IDE. The
 Proteus simulation software was used to construct the circuit and ensure that the required
 output is obtained. The MAX7221 display driver was used to interface the microcontroller to
 the display.
