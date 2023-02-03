@@ -1,4 +1,36 @@
-# CODE
+# Driving MAX7221 LED seven-segment display using PIC16F877A
+# Abstract
+The aim of this project is to display the EN number on a seven segment display. For this
+task the PIC16F877A microcontroller and drive/control LED Seven Segment Display MAX7221
+was used. Assembler was used as the programming language. The circuit was constructed
+using Proteus simulation software.
+
+# Introduction
+MAX7221 is a compact, serial input/output common-cathode display driver that interfaces
+microcontrollers to 7-segment numeric LED displays of up to 8 digits. This chip is compatible
+with SPI and many serial communication protocols. This chip needs only 3 control lines from
+your microcontroller to drive the display. Seven segment displays are used for devices such as
+bar graph displays, industrial controllers, panel meters and LED matrix displays. The seven
+segments are assigned letters from A to G. There is an optional decimal point that can be used
+to display non integer numbers.
+
+# Objectives
+• Identify the features and functions of the Max 7221 display driver
+
+• Become proficient in programming microcontrollers using assembly
+
+• Learn the principles of circuit design
+
+• Understand the applications of seven segment displays
+
+# Methodology
+<img width="136" alt="image" src="https://user-images.githubusercontent.com/124335793/216532629-2b5e8a6d-47cd-4ecc-b64e-0abf4340bf20.png">
+
+
+
+
+
+# Code
   ; PIC16F877A Configuration Bit Settings
 
 ; Assembly source line config statements
