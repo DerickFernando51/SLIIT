@@ -51,20 +51,57 @@ implemented and tested.
 
 • Therefore, the circuit is midpoint biased
 
-## Frequency response
+## 3.2 Frequency response
 <img width="870" alt="image" src="https://user-images.githubusercontent.com/124335793/216590095-947ebfcf-d20a-4f00-acb4-23d1bce402fc.png">
 
-## Peak to peak output voltage with the load
+## 3.3 Peak to peak output voltage with the load
 <img width="898" alt="image" src="https://user-images.githubusercontent.com/124335793/216590213-da08c2f0-00e7-44c4-a067-8c510bb4dc04.png">
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/124335793/216590479-7036ef21-e372-42e0-9cb5-1946a02f717d.png">
 • V<sub>P-P</sub> = 185 mV
 
-## Peak to peak output voltage when the load is removed
+## 3.4 Peak to peak output voltage when the load is removed
 <img width="911" alt="image" src="https://user-images.githubusercontent.com/124335793/216590933-26c5fe32-2ba5-4456-aaa5-2d0b7b468a46.png">
 <img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216590991-0f7c7ea4-70ea-4dd8-a621-18a91bf0c0f4.png">
 • V<sub>P-P</sub> = 7.66 V
 
 
+# 4.0 PCB design and hardware implementation
 
+## PCB design
+The following measures were taken to optimize the area of the PCB and minimize EMI interference:
+
+• The maximum possible copper thickness was obtained
+
+• Sharp right-angle bends were avoided wherever possible
+
+<img width="937" alt="image" src="https://user-images.githubusercontent.com/124335793/216591846-48e537d2-4578-4c99-9357-1a47729c7234.png">
+
+## Circuit
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216591999-6989e01a-2ffe-4504-9b10-5924c8c588d4.png">
+<img width="909" alt="image" src="https://user-images.githubusercontent.com/124335793/216592052-090e4f56-7d09-4882-bf71-477715402e0f.png">
+Components used:
+
+     • PCB
+
+     • BC548 transistor
+
+     • 82 Ω resistor
+
+     • 330 Ω resistor
+
+     • 1.8 kΩ resistor
+
+     • 10 kΩ resistor
+
+     • 8 Ω resistor
+
+     • 1 mF capacitor
+
+     • 6.8 µF capacitor
+
+     • Three terminal blocks
+
+## Complete Circuit
+<img width="524" alt="image" src="https://user-images.githubusercontent.com/124335793/216593216-44c6f5ef-b327-4613-b330-890a79befa49.png">
 
  
