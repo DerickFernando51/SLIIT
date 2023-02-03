@@ -19,8 +19,8 @@ implemented and tested.
 
  • Source: BC548 datasheet
 
- • Values obtained: hFE(min) = 110
-                        hFE(max) = 800
+ • Values obtained: 
+    h<sub>FE(min)</sub> = 110,     h<sub>FE(max)</sub> = 800
 
 
 ## 2.2 Analysis steps
