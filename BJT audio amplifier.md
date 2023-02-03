@@ -105,3 +105,35 @@ Components used:
 <img width="524" alt="image" src="https://user-images.githubusercontent.com/124335793/216593216-44c6f5ef-b327-4613-b330-890a79befa49.png">
 
  
+# 5.0 Observations
+# 5.1 Bias point
+<img width="910" alt="image" src="https://user-images.githubusercontent.com/124335793/216632918-ea00c06a-b779-4aaf-a797-4859578d4a35.png">
+• V<sub>CE</sub> = 5.069 V
+
+# 5.2 Peak to peak output voltage with load
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216633278-4b274f8b-4a17-4e97-a757-2c9946221719.png">
+• V<sub>P-P</sub> = 126 mV
+
+# 5.4 Peak to peak output voltage without load
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216633490-d3a1ae76-05fe-4323-a596-226c5cf7acbb.png">
+• V<sub>P-P</sub> = 6.4 V
+
+# 6.0 Discussion
+ In the first part of this lab the voltage divider bias circuit was analyzed to find the values
+of the required resistors and capacitors. Next, the simulations were performed in Multisim
+software using the values obtained. After confirming that the required output was obtained the
+PCB was designed. Then, the components were soldered to the PCB and the complete circuit
+was constructed. Finally, the output voltage and bias point accuracy of the physical circuit was
+recorded.
+
+ <img width="912" alt="image" src="https://user-images.githubusercontent.com/124335793/216634134-c9088c21-5d72-4c5c-957a-17f354cb2c84.png">
+
+ There is a slight variance between the practical and theoretical values. However, these
+values are acceptable and the circuit can be considered to be midpoint biased.
+
+This assignment provided a practical understanding of the amplification function of
+bipolar junction transistors. I was able to clearly understand the concepts of BJT analysis,
+optimal PCB design and circuit construction.
+
+
+
