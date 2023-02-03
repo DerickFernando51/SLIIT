@@ -1,11 +1,11 @@
 # Driving MAX7221 LED seven-segment display using PIC16F877A
-# Abstract
+# 1.0 Abstract
 The aim of this project is to display the EN number on a seven segment display. For this
 task the PIC16F877A microcontroller and drive/control LED Seven Segment Display MAX7221
 was used. Assembler was used as the programming language. The circuit was constructed
 using Proteus simulation software.
 
-# Introduction
+# 2.0 Introduction
 MAX7221 is a compact, serial input/output common-cathode display driver that interfaces
 microcontrollers to 7-segment numeric LED displays of up to 8 digits. This chip is compatible
 with SPI and many serial communication protocols. This chip needs only 3 control lines from
@@ -14,7 +14,7 @@ bar graph displays, industrial controllers, panel meters and LED matrix displays
 segments are assigned letters from A to G. There is an optional decimal point that can be used
 to display non integer numbers.
 
-# Objectives
+# 3.0 Objectives
 • Identify the features and functions of the Max 7221 display driver
 
 • Become proficient in programming microcontrollers using assembly
@@ -23,14 +23,101 @@ to display non integer numbers.
 
 • Understand the applications of seven segment displays
 
-# Methodology
-<img width="136" alt="image" src="https://user-images.githubusercontent.com/124335793/216532629-2b5e8a6d-47cd-4ecc-b64e-0abf4340bf20.png">
+# 4.0 Methodology
+
+# 4.1 Pin configuration and selection
+
+  
+   <img width="824" alt="image" src="https://user-images.githubusercontent.com/124335793/216533938-177446b8-d6e9-4d39-80f0-0d2e9f554fd4.png">
 
 
 
+➢ Pins 1, 12 and 13 were used to feed data into the MAX7221 display.The ports of the pic16F877A were selected as follows:
+ 
+     • Port B, pin 1 – CLK
+ 
+     • Port B, pin 2 – CS
+  
+     • Port B, pin 3 – DIN
+
+➢ The seven segments A to G and the decimal point were connected to the display
+
+➢ The DIG 0 -DIG 7 pins were also connected to the display as shown above.
+
+➢ The ISET pin was connected to the VDD through a resistor
+
+# 4.2 Data format
+<img width="737" alt="image" src="https://user-images.githubusercontent.com/124335793/216534882-28e1904b-c917-43f8-80b5-96cfa9d47fad.png">
+
+The MAX7221 display has a 16 bit serial data format. The bits from 11 to 8 specify the address
+of the data. The next 8 bits contain the data.
+
+# 4.3 Initialization of registers
+<img width="759" alt="image" src="https://user-images.githubusercontent.com/124335793/216535346-d3c4bcdd-785a-43b3-af6a-107d4e05eb88.png">
+
+The MAX7221 has 5 registers that should be initialized before data can be fed.
+
+    • Shutdown register
+
+    • Decode mode register
+
+    • Intensity register
+
+    • Scan limit register
+
+    • Display test register
+
+# 4.3.1 Shutdown register
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/124335793/216535669-dcd8efb0-f387-4e4c-a888-ba56af62b589.png">
+
+  • The address of this register is (0xXC)
+ 
+  • The normal operation mode was selected (0x01)
+  
+# 4.3.2 Decode mode register
+
+<img width="914" alt="image" src="https://user-images.githubusercontent.com/124335793/216536289-ff7c1151-42fc-41b7-97bd-81f1a17fe484.png">
+
+• The address of this register is (0xX9)
+
+• Code B decode for digits 7-0 was selected (0xFF)
+
+# 4.3.3 Display test register
+
+<img width="913" alt="image" src="https://user-images.githubusercontent.com/124335793/216536808-09dab430-84b9-48c4-8d29-a3eb28bc4c5c.png">
+
+• The address of this register is (0xXF)
+
+• The normal operation mode was selected (0x00)
+
+# 4.3.4 Intensity register
+<img width="762" alt="image" src="https://user-images.githubusercontent.com/124335793/216537222-55ac608b-3764-48ce-b141-ca76ff50495e.png">
+
+• The address of this register is (0xXA)
+
+• The maximum brightness was selected (0xXF)
+
+# 4.3.5 Scan limit register
+<img width="760" alt="image" src="https://user-images.githubusercontent.com/124335793/216537447-5cad3092-1cb5-4298-a397-6bdedaf3e957.png">
+
+• The address of this register is (0xXB)
+
+• The option to display digits 0-7 was selected (0xX7)
 
 
-# Code
+# 4.4 Circuit set up
+<img width="915" alt="image" src="https://user-images.githubusercontent.com/124335793/216537785-bfe2bfef-24ee-45bc-b5ec-c48cbab3d355.png">
+
+Components used:
+
+      • MAX7221 display driver
+    
+      • PIC16F877A microcontroller
+    
+      • 7 segment, 8 digit cathode display
+    
+      • Crystal oscillator
+# 5.0 Code
   ; PIC16F877A Configuration Bit Settings
 
 ; Assembly source line config statements
@@ -750,3 +837,14 @@ MAIN:
     BSF PORTB,2
       
 GOTO MAIN
+# 6.0 Output
+
+<img width="915" alt="image" src="https://user-images.githubusercontent.com/124335793/216538236-23e644ec-e6db-4868-814d-b8f4f1545bef.png">
+
+# 7.0 Conclusion
+
+The task of this project was to display the EN number on a seven segment display. This was
+achieved by programming the PIC16F877A microcontroller using the mplab software. The
+Proteus simulation software was used to construct the circuit and ensure that the required
+output is obtained. The MAX7221 display driver was used to interface the microcontroller to
+the display.
